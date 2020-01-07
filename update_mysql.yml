@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  gather_facts: False
+  remote_user: root
+  tasks:
+    - shell: ansible-galaxy install dba_ray.mysql --force
