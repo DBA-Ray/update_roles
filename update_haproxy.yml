@@ -1,5 +1,5 @@
 ---
-- hosts: ansible
+- hosts: localhost
   gather_facts: False
   remote_user: root
   tasks:
