@@ -3,4 +3,4 @@
   gather_facts: False
   remote_user: root
   tasks:
-    - shell: "source /etc/profile;ansible-galaxy install dba_ray.haproxy --force"
+    - shell: "ansible-galaxy install dba_ray.haproxy --force --roles-path /etc/ansible/roles"
