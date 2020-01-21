@@ -1,8 +1,6 @@
 ---
 - hosts: localhost
   gather_facts: False
-  become: yes
-  become_method: su
   remote_user: root
   tasks:
     - shell: "ansible-galaxy install dba_ray.haproxy --force --ignore-errors --roles-path /etc/ansible/roles"
